@@ -20,7 +20,7 @@ body {
 }
 
 .header{
-
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,10 +29,7 @@ body {
 .header--logo {
     width: 75px;
     height: auto;
-}
-
-.header > img {
-    padding-top: 10px;
+    padding-top:15px;
 }
 
 .header--nav{
@@ -40,15 +37,20 @@ body {
     width: 225px; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header--nav > a{
+    padding-top: 10px;
     border-top : 2px solid transparent;
 }
 
 .header--nav > a:hover{
     border-top : 2px solid #0065FC;
+}
+
+.header--logo_hebergements{
+    color:#0065FC;
 }
 
 .main-container {
@@ -197,4 +199,15 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .header--nav > a{
+        padding-top: 10px;
+        border-top : 2px solid transparent;
+        border-bottom: 2px solid transparent ;
+    }
+    
+    .header--nav > a:hover{
+        border-top : 2px solid transparent;
+        border-bottom: 2px solid #0065FC ;
+    
+    }
 }
