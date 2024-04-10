@@ -14,14 +14,47 @@
 }
 
 body {
+    margin : 0px 0px;
     display: flex;
     justify-content: center;
+}
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header--logo {
+    width: 75px;
+    height: auto;
+}
+
+.header > img {
+    padding-top: 10px;
+}
+
+.header--nav{
+    padding-top:2px;
+    width: 225px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header--nav > a{
+    border-top : 2px solid transparent;
+}
+
+.header--nav > a:hover{
+    border-top : 2px solid #0065FC;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 0px;
     box-sizing: border-box;
 }
 
