@@ -19,6 +19,7 @@ body {
     justify-content: center;
 }
 
+/* etpae 3 */
 .header{
     padding-bottom: 20px;
     display: flex;
@@ -52,6 +53,7 @@ body {
 .header--logo_hebergements{
     color:#0065FC;
 }
+/* fin etape 3 pour le desktop (pour le format mobile en bas du fichier) */
 
 .main-container {
     width: 100%;
@@ -64,6 +66,81 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+/* etape 4 */
+.formSearch{
+    display : inline-flex;
+    flex-direction: row;
+    align-items: left;
+    height: 60px; 
+    border : none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.formSearch >{
+    width : 100%;
+}
+
+.formSearch--pin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 14px 0 0 14px;
+}
+
+.fa-map-marker-alt{
+    font-size:25px;
+}
+
+.formSearch--input{
+    width: 220px;
+}
+
+.formSearch > input,
+.formSearch > button {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border : none;
+}
+    
+.formSearch--input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.formSearch--input:focus{
+    
+    border: transparent;
+    outline: none; 
+    border: none;
+}
+
+.formSearch--input:focus::placeholder{
+    color:rgb(218, 223, 216);
+}
+
+
+.formSearch--buttonDesktop{
+width: 170px;;
+background-color: #0065FC;
+color:#F2F2F2;
+padding: 0px 15px;
+border-radius : 0 10px 10 0px;
+}
+
+.formSearch--buttonMobile{
+    display: none;
+}
+
+
+/* fin etape 4 */
 
 .section-title {
     margin: 0;
@@ -199,6 +276,8 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    /* etape 3 bordure bleue mobile */
     .header--nav > a{
         padding-top: 10px;
         border-top : 2px solid transparent;
@@ -210,4 +289,20 @@ a {
         border-bottom: 2px solid #0065FC ;
     
     }
+
+
+    /* etape 4 bouton */
+    .formSearch--buttonDesktop{
+
+        display: none;
+        }
+        
+        .formSearch--buttonMobile{
+            display: initial;
+            width: 60px;
+            background-color: #0065FC;
+            color:#F2F2F2;
+            padding: 0px 15px;
+            border-radius : 0 10px 10 0px;
+        }
 }
