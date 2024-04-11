@@ -316,8 +316,38 @@ border-radius : 0 10px 10 0px;
     margin-bottom: 5px;
 }
 
+/* étape 8  */
 
+.activities{
+    margin-bottom: 20px;;
+    display: flex;
+    flex-direction : column;
+}
 
+.activities--cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities--cards--card{
+    height: 500px;
+    width : 325px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    /* box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); */
+    border-radius: 15px;
+}
+
+.activities--cards--card_img{
+    height : 425px; 
+    width: 100%;
+    object-fit: cover; 
+}
+
+/* fin étape 8 */
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
