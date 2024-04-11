@@ -319,7 +319,7 @@ border-radius : 0 10px 10 0px;
 /* étape 8  */
 
 .activities{
-    margin-bottom: 20px;;
+    margin: 20px 20px 0px 20px;
     display: flex;
     flex-direction : column;
 }
@@ -348,6 +348,18 @@ border-radius : 0 10px 10 0px;
 }
 
 /* fin étape 8 */
+
+/* étape 9 */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #F2F2F2;
+    padding: 0px 20px;
+}
+
+/* fin étape 9 */
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
