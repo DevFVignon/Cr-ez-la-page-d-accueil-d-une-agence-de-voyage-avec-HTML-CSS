@@ -139,7 +139,7 @@ a {
 
 
 .formSearch--buttonDesktop{
-width: 140px;;
+width: 140px;
 background-color: #0065FC;
 color:#F2F2F2;
 padding: 0px 15px;
@@ -418,15 +418,71 @@ border-radius : 0 15px 15px 0px;
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    body{
+        padding: 0px 35px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .header{
+        font-size: 12px
+    }
+
+    .header--nav{
+        width: 180px;
+    }
+
+    .header--logo {
+        width: 50px;
+        height: auto;
+        padding-top:25px;
+    }
+
+    .title-h1{
+        font-size: 17px;
+    }
+
+    .title-p{
+        margin-top: 0px;
+    }
+
+
+    .formSearch{
+        height: 40px;
+    }
+
+    .formSearch > input,
+    .formSearch > button {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .formSearch--pin{
+    width: 40px;}
+    .fa-map-marker-alt{
+        font-size:15px;
+    }
+    .formSearch--input{
+        width: 150px;
+    }
+    .formSearch--buttonDesktop{
+        width: 100px;}
 
     .filters{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .filters--h2{
+    .filters > .filters--h2{
         text-align: left;
+        font-size: 14px;
     }
+
+    .filters > .filters--ul > .filters--button{
+        text-align: left;
+        font-size: 12px;}
 
     .filters--ul{
         margin-top: 0px;
@@ -434,9 +490,26 @@ border-radius : 0 15px 15px 0px;
 
     .filters--button{
         margin-left: 0px;
-        margin-right: 20px;
+        margin-right: 15px;
+        margin-top:0px;
+        margin-bottom:0px;
+        padding: 10px 15px;
     }
     
+    .filters--button > i{
+        font-size: 18px;
+
+        
+    }
+
+
+
+
+
+
+
+
+
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -457,15 +530,7 @@ border-radius : 0 15px 15px 0px;
         margin-bottom: 5px;
     }
     
-    .card-txt > .card-title{
-        margin: 5px 0px 0px 0px;
-        font-size: 0.9em;
-
-    }
     
-    .card-txt > .card-subtitle{
-        margin: 5px 0px;
-    }
 
     .activities--cards--card_img{
         height : 225px; 
