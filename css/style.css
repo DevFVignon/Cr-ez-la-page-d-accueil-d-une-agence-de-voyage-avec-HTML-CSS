@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+
 }
 
 :root {
@@ -17,7 +18,7 @@ body {
     margin : 0px 0px;
     display: flex;
     justify-content: center;
-    padding : 0px 10px;
+    padding : 0px 50px;
 }
 
 /* etpae 3 */
@@ -36,10 +37,10 @@ body {
 
 .header--nav{
     padding-top:2px;
-    width: 225px; 
+    width: 250px; 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header--nav > a{
@@ -68,18 +69,21 @@ a {
     text-decoration: none;
 }
 
-h1{
-    font-size: 22px;
-    font-weight: 600;
+
+.title-h1 {
+    font-size: 23px;
+    margin: 10px 0;
+    font-weight: 700;
     margin-top: 40px;
-}
+  }
+
 
 /* etape 4 */
 .formSearch{
     display : inline-flex;
     flex-direction: row;
     align-items: left;
-    height: 50px; 
+    height: 53px; 
     border : none;
     border-top: solid 1px #F2F2F2;
     border-bottom: solid 1px #F2F2F2;
@@ -96,9 +100,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px;
+    width: 60px;
     height: auto;
-    background-color: #F2F2F2;
+    background-color:#F2F2F2;
     border-radius: 14px 0 0 14px;
 }
 
@@ -107,7 +111,7 @@ h1{
 }
 
 .formSearch--input{
-    width: 220px;
+    width: 200px;
 }
 
 .formSearch > input,
@@ -135,11 +139,11 @@ h1{
 
 
 .formSearch--buttonDesktop{
-width: 170px;;
+width: 140px;;
 background-color: #0065FC;
 color:#F2F2F2;
 padding: 0px 15px;
-border-radius : 0 10px 10 0px;
+border-radius : 0 15px 15px 0px;
 }
 
 .formSearch--buttonMobile{
@@ -158,9 +162,13 @@ border-radius : 0 10px 10 0px;
 
 .filters > .filters--h2,
 .filters > .filters--ul > .filters--button{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
+}
+
+.filters > .filters--h2{
+    margin-right: 10px;
 }
 
 .filters--ul{
@@ -175,8 +183,9 @@ border-radius : 0 10px 10 0px;
 .filters--button{
     border: rgb(218, 223, 216) solid 2px;
     border-radius: 30px;
-    padding: 10px 15px 10px 15px;
-    margin : 10px
+    padding: 15px 20px 15px 20px;
+    margin : 10px;
+    /* letter-spacing: -1px;  */
 }
 
 .filters--button:hover{
@@ -187,7 +196,7 @@ border-radius : 0 10px 10 0px;
 .filters--button > i{
     margin: 0px 10px 0px 0px;
     color: #0065FC;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .info{
@@ -196,7 +205,7 @@ border-radius : 0 10px 10 0px;
     margin: 10px 0px 30px 0px;
 }
 
-.fas {
+.info .fas {
     color: #0065fc;
     font-size: 15px;
     padding: 7px 11px 7px 11px;
@@ -263,24 +272,24 @@ border-radius : 0 10px 10 0px;
 }
 
 .herbergements-cards{
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 30px; */
-
+    grid-gap: 30px;
+/* 
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;*/
+} 
 
-.herbergements-cards > a {
+/* .herbergements-cards > a {
     flex-basis: calc(33.33% - 30px); 
     margin: 15px; 
-}
+} */
 
 
 .herbergements-cards > a > .card > img{
     width : 100%;
-    height: 110px;
+    height: 120px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -290,6 +299,13 @@ border-radius : 0 10px 10 0px;
     margin-bottom: 10px;
 }
 
+.card-txt > .card-title{
+    margin: 5px 0px 0px 0px;
+}
+
+.card-txt > .card-subtitle{
+    margin: 5px 0px;
+}
 
 
 .hebergements > div > h3{
@@ -348,29 +364,34 @@ border-radius : 0 10px 10 0px;
     margin: 20px 20px 0px 20px;
     display: flex;
     flex-direction : column;
+    padding: 0px 5px;
 }
 
 .activities--cards{
-    display: flex;
+    height: 465px;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    margin-bottom: 70px;
 }
 
-.activities--cards--card{
-    height: 500px;
-    width : 325px;
+.activities--cards--card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    /* box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); */
     border-radius: 15px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border : solid black 1px;
 }
 
-.activities--cards--card_img{
-    height : 425px; 
+.activities--cards--card_img {
+    height: 400px;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 /* fin étape 8 */
@@ -384,6 +405,11 @@ border-radius : 0 10px 10 0px;
     padding: 0px 20px;
 }
 
+.footer--apropos_title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 /* fin étape 9 */
 
 
@@ -392,12 +418,60 @@ border-radius : 0 10px 10 0px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+
+    .filters{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filters--h2{
+        text-align: left;
+    }
+
+    .filters--ul{
+        margin-top: 0px;
+    }
+
+    .filters--button{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .herbergements-cards > a > .card > img{
+        width : 100%;
+        height: 75px;
+        object-fit: cover;
+    }
+
+    .herbergements-cards >a >.card>.card-content{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .card-txt > .card-title{
+        margin: 5px 0px 0px 0px;
+        font-size: 0.9em;
+
+    }
+    
+    .card-txt > .card-subtitle{
+        margin: 5px 0px;
+    }
+
+    .activities--cards--card_img{
+        height : 225px; 
+        width: 100%;
+        object-fit: cover; 
     }
 
     .populaires {
@@ -413,6 +487,11 @@ border-radius : 0 10px 10 0px;
 
     .populaires-cards a {
         width: 30%;
+    }
+
+    .populaires-cards img{
+        height:115px;
+        width: 50px ;
     }
 
     .populaires-cards .card-title {
