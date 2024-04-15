@@ -418,6 +418,7 @@ border-radius : 0 15px 15px 0px;
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1023.98px) {
 
+/* étape 10 avec version mobile dessous */
     body{
         padding: 0px 35px;
     }
@@ -512,13 +513,6 @@ border-radius : 0 15px 15px 0px;
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
-
-
-
-
-
-
 
     .hebergements {
         width: 100%;
@@ -619,26 +613,56 @@ border-radius : 0 15px 15px 0px;
 
 }
 
-
-
-
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
+
+    /* suite étape 9 */
+
+.header{
+    flex-direction: column;
+    align-items: center;
+}
+
+.header--logo{
+    width: 130px;
+    margin: 45px 0px;;
+}
+
+.header--nav{
+    font-size: 32px;
+    width : 768px;
+}
+
+.header--nav>a{
+    width: 50%;
+    text-align : center;
+}
 
     /* etape 3 bordure bleue mobile */
     .header--nav > a{
         padding-top: 10px;
         border-top : 2px solid transparent;
         border-bottom: 2px solid transparent ;
+        padding-bottom: 25px;
     }
     
     .header--nav > a:hover{
         border-top : 2px solid transparent;
-        border-bottom: 2px solid #0065FC ;
+        border-bottom: 4px solid #0065FC ;
     
     }
 
+.title-h1, .title-p{
+    margin: 20px 15px;}
+
+.title-h1{
+    font-size: 46px;
+}
+
+.title-p{
+    font-size: 32px;
+}
 
     /* etape 4 bouton */
     .formSearch--buttonDesktop{
@@ -648,10 +672,149 @@ border-radius : 0 15px 15px 0px;
         
         .formSearch--buttonMobile{
             display: initial;
+            font-size: 24px;
             width: 60px;
             background-color: #0065FC;
             color:#F2F2F2;
             padding: 0px 15px;
-            border-radius : 0 10px 10 0px;
+            border-radius : 0px 10px 10px 0px;
         }
+    /* fin étape 4 */
+
+        .formSearch{
+            height: 100px; 
+            width:98%;
+            border-radius: 35px;
+            overflow: visible;
+        }
+        
+        .formSearch >{
+            width : 100%;
+            
+        }
+        
+        .formSearch--pin{
+            width: 135px;
+            height: auto;
+            border-radius: 35px 0 0 35px;
+        }
+        
+        .fa-map-marker-alt{
+            font-size:36px;
+        }
+        
+        .formSearch>input{
+            width: 550px;
+            text-align:left;
+            padding-left: 50px;
+        }
+        
+        .formSearch > input,
+        .formSearch > button {
+            font-size: 36px;
+        }
+    
+        .formSearch--buttonMobile {
+            width: 120px;
+            border-radius : 30px;
+            /* box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5); */
+            filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.3));
+        }
+
+
+
+
+
+
+/* 
+        .filters{
+            align-items: center;
+        } */
+        
+        .filters >{
+            width: 20%;
+        }
+
+        .filters > .filters--h2{
+            font-size: 36px;
+        }
+
+
+        .filters > .filters--ul > .filters--button{
+            font-size: 28px;
+            /* font-weight: 700;
+            text-align: center; */
+        }
+        
+        /* .filters > .filters--h2{
+            margin-right: 10px;
+        } */
+        
+        /* .filters--ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap : wrap;
+            justify-content: space-between;
+            list-style-type: none;
+            padding:0px;
+        } */
+        
+        .filters--button{
+            width: 40%;
+            border-radius: 50px;
+            border: rgb(218, 223, 216) solid 4px;
+            padding: 30px 20px 30px 20px;
+            margin : 10px;
+            /* letter-spacing: -1px;  */
+        }
+        
+        .filters--button:hover{
+            cursor: pointer;
+            background-color:#DEEBFF;
+        }
+        
+        .filters--button > i{
+            margin: 0px 20px 0px 0px;
+            color: #0065FC;
+            font-size: 42px;
+            padding-left: 20px;
+        }
+        
+        /* .info{
+            display : inline-flex;
+            flex-direction: row;
+            margin: 10px 0px 30px 0px;
+        } */
+        
+        .info .fas {
+            color: #0065fc;
+            font-size: 24px;
+            padding: 10px 18px 10px 18px;
+            border: solid 2px #D9D9D9;
+            border-radius: 3000px;
+            margin: 15px 15px 15px 0px;
+          }
+        
+        .info-p{
+            margin: 5px 0px 0px 0px;
+            font-size: 32px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
