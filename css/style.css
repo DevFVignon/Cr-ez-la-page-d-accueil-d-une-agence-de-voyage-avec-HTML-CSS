@@ -365,6 +365,7 @@ border-radius : 0 15px 15px 0px;
     display: flex;
     flex-direction : column;
     padding: 0px 5px;
+
 }
 
 .activities--cards{
@@ -375,24 +376,35 @@ border-radius : 0 15px 15px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 30px;
-    filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.3));
+    grid-gap: 35px;
     margin-bottom: 70px;
+
+}
+.activities--cards--card {
+    position: relative;
+    border-radius: 15px;
 }
 
-.activities--cards--card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.activities--cards--card::before,
+.activities--cards--card::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0px);
+    height: calc(100% + 0px);
+    top: -0px;
+    left: -0px;
+    z-index: -1;
     border-radius: 15px;
-    
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .activities--cards--card_img {
     height: 400px;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
 }
+
 
 /* fin étape 8 */
 
@@ -547,7 +559,7 @@ border-radius : 0 15px 15px 0px;
     
 
     .activities--cards--card_img{
-        height : 225px; 
+        height : 150px; 
         width: 100%;
         object-fit: cover; 
     }
@@ -615,7 +627,7 @@ border-radius : 0 15px 15px 0px;
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     /* ... */
 body{
     padding: 0px;
@@ -936,8 +948,11 @@ body{
     .activities--cards--card{
         overflow: visible;
     }
+/* .englobe{
+    height:400px;
+} */
 
-.activities--cards--card>img{
+.activities--cards--card_img{
     height : 300px;
     width: 100%;
     object-fit: cover
@@ -946,6 +961,25 @@ body{
     font-size: 32px;
 }
 
+.footer{
+    grid-template-columns: 1fr;
+    background-color:#F2F2F2;
+    grid-gap: 30px;
+}
+
+.footer--apropos_title{
+    font-size: 36px;
+    margin: 50px 0px 0px 50px;
+}
+
+.footer >div > p >a{
+    font-size: 28px;
+    margin: 50px 0px 0px 50px;
+}
+
+.footer >div > p{
+    margin-bottom: 30px;
+}
 
 }
 
