@@ -416,7 +416,7 @@ border-radius : 0 15px 15px 0px;
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
 
     body{
         padding: 0px 35px;
@@ -497,26 +497,36 @@ border-radius : 0 15px 15px 0px;
     }
     
     .filters--button > i{
-        font-size: 18px;
-
-        
+        font-size: 18px;   
     }
-
-
-
-
-
-
-
-
-
+    
+    .info .fas {
+        font-size: 10px;
+        padding: 4px 7px 4px 7px;
+        margin-right: 10px;
+      }
+    .info-p{
+        margin: 3px 0px 0px 0px;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+
+
+
+
+
+
+
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-title  .section-title,
+    .hebergements div h3{
+        font-size: 16px;
     }
 
     .herbergements-cards > a > .card > img{
@@ -530,6 +540,15 @@ border-radius : 0 15px 15px 0px;
         margin-bottom: 5px;
     }
     
+
+    .herbergements-cards >a >.card>.card-content>.card-txt>.card-title,
+    .herbergements-cards >a >.card>.card-content>.card-txt>.card-subtitle{
+        font-size: 12px;
+    }
+
+   .card-rating{
+        font-size: 14px;
+    }
     
 
     .activities--cards--card_img{
@@ -553,19 +572,55 @@ border-radius : 0 15px 15px 0px;
         width: 30%;
     }
 
-    .populaires-cards img{
-        height:115px;
-        width: 50px ;
+    .populaires-cards >a > .card > img{
+        height : 100px; 
+        width : 60px;
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 11px;
     }
+
+    .activities{
+        padding : 0px;
+        height: 300px;
+    }
+    
+    .activities--h2{
+        font-size: 16px;
+    }
+    /* .activities--cards{
+        height: 180px;} */
+    
+    .activities--cards--card>img{
+        height : 150px;
+        width: 100%;
+        object-fit: cover
+    }
+    .activities--cards--card_p{
+        font-size: 12px;
+    }
+
+.footer{
+    grid-gap: 60px;
 }
+
+.footer--apropos_title{
+    font-size: 14px;
+}
+
+.footer> div>p> a{
+    font-size: 12px;;
+}
+
+}
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
