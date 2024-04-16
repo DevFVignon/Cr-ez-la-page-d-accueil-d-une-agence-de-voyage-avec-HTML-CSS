@@ -429,7 +429,7 @@ border-radius : 0 15px 15px 0px;
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
 
 /* étape 10 avec version mobile dessous */
     body{
@@ -647,7 +647,7 @@ body{
 
 .header--nav{
     font-size: 32px;
-    width : 768px;
+    width: 100%;
 }
 
 .header--nav>a{
@@ -700,10 +700,11 @@ body{
 
         .formSearch{
             height: 100px; 
-            width:98%;
+            width:95%;
             border-radius: 35px;
             overflow: visible;
-            padding: 0px 35px;
+            padding: 0px 10px;
+            margin-left: 10px;
         }
         
         .formSearch >{
@@ -712,7 +713,7 @@ body{
         }
         
         .formSearch--pin{
-            width: 110px;
+            width: 115px;
             height: auto;
             border-radius: 35px 0 0 35px;
         }
@@ -722,7 +723,7 @@ body{
         }
         
         .formSearch>input{
-            width: 400px;
+            width: auto;
             text-align:left;
             padding-left: 50px;
         }
@@ -735,7 +736,7 @@ body{
         .formSearch--buttonMobile {
             width: 100px;
             border-radius : 30px;
-            filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.4));
         }
         
         .filters{
@@ -959,6 +960,7 @@ body{
 }
 .activities--cards--card_p{
     font-size: 32px;
+    margin-left: 20px;
 }
 
 .footer{
