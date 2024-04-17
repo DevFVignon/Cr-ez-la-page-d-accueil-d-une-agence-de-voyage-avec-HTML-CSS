@@ -977,3 +977,25 @@ body{
     margin-bottom: 30px;
 }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 709px) {
+
+    .header--nav>.header--logo_hebergements { 
+        text-align: start;
+    padding-left: 25px;}
+
+    .header--nav>.header--logo_activities { 
+            text-align: end;
+            padding-right: 25px;
+        }
+
+    .filters > .filters--ul > .filters--button {
+        font-size: 22px;
+    }
+    .filters--button > i {
+        font-size: 32px;
+}
+
+      
+}
