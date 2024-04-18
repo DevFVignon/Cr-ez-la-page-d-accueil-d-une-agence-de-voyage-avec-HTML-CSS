@@ -20,8 +20,8 @@
         <header class="header">
             <img src="./images/logo/Booki.png" alt="Logo" class="header--logo">
             <nav class="header--nav">
-                <a href="" class="header--logo_hebergements">Hébergements</a>
-                <a href="" class="header--logo_activities">Activités</a>
+                <a href="#hebergements" class="header--nav_hebergements">Hébergements</a>
+                <a href="#activities" class="header--nav_activities">Activités</a>
             </nav>
         </header>
 
@@ -42,20 +42,20 @@
             <div class="filters">
                 <h3 class="filters--h2">Filtres</h3> <!-- class h2 car le titre devrait être un h2 mais sur maquette représenté comme un h3 -->
                 <ul class="filters--ul">
-                    <li class="filters--button"><i class="fas fa-money-bill-wave icon-filter"></i>Economique</li>
-                    <li class="filters--button"><i class="fas fa-child icon-filter"></i>Familial</li>
-                    <li class="filters--button"><i class="fas fa-heart icon-filter"></i>Romantique</li>
-                    <li class="filters--button"><i class="fas fa-light fa-fire"></i>Nos pépites</li>
+                    <li class="filters--button"><i class="fas fa-money-bill-wave icon-filter"></i><div>Economique</div></li>
+                    <li class="filters--button"><i class="fas fa-child icon-filter"></i><div>Familial</div></li>
+                    <li class="filters--button"><i class="fas fa-heart icon-filter"></i><div>Romantique</div></li>
+                    <li class="filters--button"><i class="fas fa-light fa-fire"></i><div>Nos pépites</div></li>
                 </ul>
             </div>
-
+            
             <div class="info">
                 <i class="fas fa-info"></i>
                 <p class="info-p">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div> 
@@ -85,7 +85,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
-                                        <p class="card-subtitle">Nuiit à partir de 96€</p>
+                                        <p class="card-subtitle">Nuit à partir de 96€</p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -193,7 +193,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -248,7 +248,7 @@
                 </section>
             </div>
 
-            <div class="activities">
+            <div class="activities" id="activities">
                 <h2 class="activities--h2">Activités à Marseille</h2>
                 <div class="activities--cards">
 
@@ -285,21 +285,21 @@
         </main>
         <footer>
             <div class="footer">
-                <div class="footer--apropos">
-                    <h4 class="footer--apropos_title">A propos</h4>
+                <div class="footer--categories">
+                    <h4 class="footer--categories_title">A propos</h4>
                     <p><a href="">Fonctionnement du site</a></p>
                     <p><a href="">Conditions générales</a></p>
                     <p><a href="">Données et confidentialité</a></p>
                 </div>
                 
-                <div class="footer--hebergements">
-                    <h4 class="footer--apropos_title">Nos hébergements</h4>
+                <div class="footer--categories">
+                    <h4 class="footer--categories_title">Nos hébergements</h4>
                     <p><a href="">Charté qualité</a></p>
                     <p><a href="">Proposer votre hôtel</a></p>
                 </div>
 
-                <div class="footer--assistance">
-                    <h4 class="footer--apropos_title">Assistance</h4>
+                <div class="footer--categories">
+                    <h4 class="footer--categories_title">Assistance</h4>
                     <p><a href="">Centre d'aide</a></p>
                     <p><a href="">Nous contacter</a></p>
                 </div>

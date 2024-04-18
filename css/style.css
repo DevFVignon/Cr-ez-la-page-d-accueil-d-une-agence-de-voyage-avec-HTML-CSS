@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-
 }
 
 :root {
@@ -28,18 +27,23 @@ body {
     justify-content: space-between;
 }
 
+.fas{
+    font-size: 1.3em;
+}
+
 .header--logo {
     width: 75px;
     height: auto;
+    max-width: 100%;
     padding-top:15px;
 }
 
 .header--nav{
     padding-top:2px;
-    width: 250px; 
+    width: min-content; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 75px;
 }
 
 .header--nav > a{
@@ -51,7 +55,7 @@ body {
     border-top : 2px solid #0065FC;
 }
 
-.header--logo_hebergements{
+.header--nav_hebergements{
     color:#0065FC;
 }
 
@@ -67,52 +71,44 @@ a {
     text-decoration: none;
 }
 
-
 .title-h1 {
-    font-size: 23px;
-    margin: 10px 0;
-    font-weight: 700;
-    margin-top: 40px;
-  }
+    font-size: 1.5em;
+    margin: 40px 0px 10px 0;
+}
 
-
-/* etape 4 */
 .formSearch{
     display : inline-flex;
     flex-direction: row;
-    height: 53px; 
+    height: 50px; 
     border : none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
-    border-radius: 10px;
+
+    border-radius: 15px;
     margin: 15px 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .formSearch--pin{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 3.5em;
     height: auto;
     background-color:#F2F2F2;
-    border-radius: 14px 0 0 14px;
+    border-radius: 15px 0 0 15px;
 }
 
-.fa-map-marker-alt{
-    font-size:25px;
-}
-
-.formSearch--input{
-    width: 200px;
-}
-
-.formSearch > input,
-.formSearch > button {
-    font-size: 18px;
+.formSearch--input,
+.formSearch--buttonDesktop{
+    font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     border : none;
+}
+
+.formSearch--input{
+    width: 10.5em;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
 }
     
 .formSearch--input::placeholder{
@@ -120,7 +116,6 @@ a {
 }
 
 .formSearch--input:focus{
-    
     border: transparent;
     outline: none; 
     border: none;
@@ -131,7 +126,7 @@ a {
 }
 
 .formSearch--buttonDesktop{
-width: 140px;
+width: 7.0em;
 background-color: #0065FC;
 color:#F2F2F2;
 padding: 0px 15px;
@@ -146,17 +141,14 @@ border-radius : 0 15px 15px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
+    margin: 10px 0px;
 }
 
-.filters > .filters--h2,
-.filters > .filters--ul > .filters--button{
-    font-size: 18px;
-    font-weight: 700;
+.filters--h2{
+    font-size: 1.2em;
+    font-weight: 600;
     text-align: center;
-}
-
-.filters > .filters--h2{
-    margin-right: 10px;
 }
 
 .filters--ul{
@@ -166,14 +158,19 @@ border-radius : 0 15px 15px 0px;
     justify-content: space-between;
     list-style-type: none;
     padding:0px;
+    gap: 20px;
 }
 
 .filters--button{
-    border: rgb(218, 223, 216) solid 2px;
-    border-radius: 30px;
-    padding: 15px 20px 15px 20px;
-    margin : 10px;
-    /* letter-spacing: -1px;  */
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    border: rgb(218, 223, 216) solid 3px;
+    border-radius: 40px;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .filters--button:hover{
@@ -182,28 +179,24 @@ border-radius : 0 15px 15px 0px;
 }
 
 .filters--button > i{
-    margin: 0px 10px 0px 0px;
     color: #0065FC;
-    font-size: 22px;
+    font-size: 1.1em;
 }
 
 .info{
     display : inline-flex;
     flex-direction: row;
+    align-items: center;
     margin: 10px 0px 30px 0px;
+    gap :20px;
 }
 
-.info .fas {
+.info .fas{
     color: #0065fc;
-    font-size: 15px;
+    font-size: 0.8em;
     padding: 7px 11px 7px 11px;
     border: solid 1px #D9D9D9;
     border-radius: 2000px;
-    margin-right: 20px;
-  }
-
-.info-p{
-    margin: 5px 0px 0px 0px;
 }
 
 .section-title {
@@ -224,6 +217,11 @@ border-radius : 0 15px 15px 0px;
 
 .card-title {
     font-size: 16px;
+}
+
+.card-rating i{
+    font-size: 1.0em;
+    margin-right: -3px;
 }
 
 .euro {
@@ -248,11 +246,9 @@ border-radius : 0 15px 15px 0px;
 
 .hebergements {
     width: 65%;
-}
-
-/* partie 6 */
-.hebergements-title{
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .herbergements-cards{
@@ -262,30 +258,28 @@ border-radius : 0 15px 15px 0px;
     grid-gap: 30px;
 } 
 
-.herbergements-cards > a > .card > img{
+.herbergements-cards img{
     width : 100%;
     height: 120px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
-.herbergements-cards >a >.card>.card-content{
-    margin-left: 15px;
-    margin-bottom: 10px;
+.herbergements-cards .card-content{
+    padding: 0px 0px 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-txt > .card-title{
+.herbergements-cards .card-title{
     margin: 5px 0px 0px 0px;
 }
 
-.card-txt > .card-subtitle{
+.herbergements-cards .card-subtitle{
+    font-size: 0.9em;
     margin: 5px 0px;
-}
-
-
-.hebergements > div > h3{
-    margin-top:25px;
-    margin-bottom: 0px;
 }
 
 .populaires {
@@ -306,8 +300,8 @@ border-radius : 0 15px 15px 0px;
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .populaires-cards .card-content {
@@ -325,6 +319,7 @@ border-radius : 0 15px 15px 0px;
 }
 
 .populaires-cards .card-subtitle {
+    font-size: 0.9em;
     margin: 0;
 }
 
@@ -333,24 +328,19 @@ border-radius : 0 15px 15px 0px;
 }
 
 .activities{
-    margin: 20px 20px 0px 20px;
+    padding: 30px;
     display: flex;
     flex-direction : column;
-    padding: 0px 5px;
 }
 
 .activities--cards{
-    height: 465px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
+    /* height: 465px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 35px;
-    margin-bottom: 70px;
-
 }
+
 .activities--cards--card {
     position: relative;
     border-radius: 15px;
@@ -369,7 +359,6 @@ border-radius : 0 15px 15px 0px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .activities--cards--card_img {
     height: 400px;
     width: 100%;
@@ -377,17 +366,21 @@ border-radius : 0 15px 15px 0px;
     border-radius: 15px 15px 0px 0px;
 }
 
+.activities--cards--card_p{
+    padding-left: 20px;
+}
+
 .footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: #F2F2F2;
-    padding: 0px 20px;
+    margin-top: 40px;
+    padding: 20px;
 }
 
-.footer--apropos_title{
-    font-size: 20px;
-    margin-bottom: 10px;
+.footer--categories_title{
+    font-size: 1.2em;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -582,7 +575,7 @@ border-radius : 0 15px 15px 0px;
         grid-gap: 60px;
     }
 
-    .footer--apropos_title{
+    .footer--categories_title{
         font-size: 14px;
     }
 
@@ -920,7 +913,7 @@ border-radius : 0 15px 15px 0px;
         grid-gap: 30px;
     }
 
-    .footer--apropos_title{
+    .footer--categories_title{
         font-size: 36px;
         margin: 50px 0px 0px 50px;
     }
@@ -955,11 +948,11 @@ border-radius : 0 15px 15px 0px;
 /* Small devices (phones, less than 590px) */
 @media (max-width: 590px) {
     
-    .header--nav>.header--logo_hebergements { 
+    .header--nav>.header--nav_hebergements { 
         text-align: start;
     padding-left: 25px;}
 
-    .header--nav>.header--logo_activities { 
+    .header--nav>.header--nav_activities { 
             text-align: end;
             padding-right: 25px;
     }
@@ -989,10 +982,10 @@ border-radius : 0 15px 15px 0px;
         font-size: 26px;
         width: 100%;
     }
-    .header--nav>.header--logo_activities {
+    .header--nav>.header--nav_activities {
         padding-right: 5px;
     }
-    .header--nav>.header--logo_hebergements {
+    .header--nav>.header--nav_hebergements {
         padding-left: 5px;
     }
 
