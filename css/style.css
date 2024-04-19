@@ -35,7 +35,7 @@ body {
     width: 75px;
     height: auto;
     max-width: 100%;
-    padding-top:15px;
+    padding-top:30px;
 }
 
 .header--nav{
@@ -81,10 +81,8 @@ a {
     flex-direction: row;
     height: 50px; 
     border : none;
-
     border-radius: 15px;
     margin: 15px 0px;
-    /* overflow: hidden; */
 }
 
 .formSearch--pin{
@@ -334,7 +332,6 @@ border-radius : 0 15px 15px 0px;
 }
 
 .activities--cards{
-    /* height: 465px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -400,97 +397,11 @@ border-radius : 0 15px 15px 0px;
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    body{
-        padding: 0px 35px;
-    }
-
-    p{
-        font-size: 13px;
-    }
-
-    .header{
-        font-size: 12px
-    }
-
-    .header--nav{
-        width: 180px;
-    }
-
-    .header--logo {
-        width: 50px;
-        height: auto;
-        padding-top:25px;
-    }
-
-    .title-h1{
-        font-size: 17px;
-    }
-
-    .title-p{
-        margin-top: 0px;
-    }
-
-
-    .formSearch{
-        height: 40px;
-    }
-
-    .formSearch > input,
-    .formSearch > button {
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .formSearch--pin{
-    width: 40px;}
-    .fa-map-marker-alt{
-        font-size:15px;
-    }
-    .formSearch--input{
-        width: 150px;
-    }
-    .formSearch--buttonDesktop{
-        width: 100px;}
-
     .filters{
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .filters > .filters--h2{
-        text-align: left;
-        font-size: 14px;
-    }
-
-    .filters > .filters--ul > .filters--button{
-        text-align: left;
-        font-size: 12px;}
-
-    .filters--ul{
-        margin-top: 0px;
-    }
-
-    .filters--button{
-        margin-left: 0px;
-        margin-right: 15px;
-        margin-top:0px;
-        margin-bottom:0px;
-        padding: 10px 15px;
-    }
     
-    .filters--button > i{
-        font-size: 18px;   
-    }
-    
-    .info .fas {
-        font-size: 10px;
-        padding: 4px 7px 4px 7px;
-        margin-right: 10px;
-      }
-    .info-p{
-        margin: 3px 0px 0px 0px;
-    }
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -499,37 +410,24 @@ border-radius : 0 15px 15px 0px;
         width: 100%;
     }
 
-    .hebergements-title  .section-title,
-    .hebergements div h3{
-        font-size: 16px;
+    .herbergements-cards img {
+        height :110px;
     }
 
-    .herbergements-cards > a > .card > img{
-        width : 100%;
-        height: 75px;
-        object-fit: cover;
-    }
-
-    .herbergements-cards >a >.card>.card-content{
-        margin-left: 5px;
-        margin-bottom: 5px;
-    }
-    
-
-    .herbergements-cards >a >.card>.card-content>.card-txt>.card-title,
-    .herbergements-cards >a >.card>.card-content>.card-txt>.card-subtitle{
-        font-size: 12px;
-    }
-
-   .card-rating{
+    .herbergements-cards .card-title {
         font-size: 14px;
     }
-    
 
-    .activities--cards--card_img{
-        height : 150px; 
-        width: 100%;
-        object-fit: cover; 
+    .herbergements-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .herbergements-cards .card-rating{
+        font-size: 0.8em;
+    }
+
+    .herbergements-cards .card-content {
+        padding: 0px 0px 10px 10px;
     }
 
     .populaires {
@@ -547,53 +445,27 @@ border-radius : 0 15px 15px 0px;
         width: 30%;
     }
 
-    .populaires-cards >a > .card > img{
-        height : 100px; 
-        width : 60px;
-    }
-
     .populaires-cards .card-title {
-        font-size: 12px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 11px;
-    }
-
-    .activities{
-        padding : 0px;
-        height: 300px;
-    }
-    
-    .activities--h2{
-        font-size: 16px;
-    }
-    
-    .activities--cards--card>img{
-        height : 150px;
-        width: 100%;
-        object-fit: cover
-    }
-    .activities--cards--card_p{
-        font-size: 12px;
-    }
-
-    .populaires-title .section-title {
-        font-size: 18px;
-    }
-
-    .footer{
-        grid-gap: 60px;
-    }
-
-    .footer--categories_title{
         font-size: 14px;
     }
 
-    .footer> div>p> a{
-        font-size: 12px;;
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
     }
 
+    .populaires-cards .card-rating {
+        font-size: 0.8em;
+    }
+
+    .activities--cards--card_img{
+        height : 200px; 
+        width: 100%;
+        object-fit: cover; 
+    }
+
+    .footer{
+        grid-gap: 40px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
