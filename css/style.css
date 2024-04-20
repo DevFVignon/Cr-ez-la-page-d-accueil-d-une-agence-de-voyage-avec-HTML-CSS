@@ -365,6 +365,7 @@ border-radius : 0 15px 15px 0px;
 
 .activities--cards--card_p{
     padding-left: 20px;
+    padding-right : 20px;
 }
 
 .footer{
@@ -400,6 +401,11 @@ border-radius : 0 15px 15px 0px;
     .filters{
         flex-direction: column;
         align-items: flex-start;
+        gap: 0px;
+    }
+
+    .filters--button{
+    font-size: 1.0em;
     }
     
     .hebergements-and-populaires {
@@ -470,26 +476,26 @@ border-radius : 0 15px 15px 0px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-    body{
-        padding: 0px;
+
+    .main-container{
+        padding: 0px 0px;
     }
-        /* suite étape 9 */
 
     .header{
         flex-direction: column;
         align-items: center;
-        margin: 0px;
+        margin: 10px 0;
     }
 
     .header--logo{
         width: 130px;
-        margin: 45px 0px;;
+        margin: 30px 0px;
     }
 
     .header--nav{
-        font-size: 32px;
+        font-size: 2.0em;
         width: 100%;
+        gap : 0px;
     }
 
     .header--nav>a{
@@ -497,67 +503,53 @@ border-radius : 0 15px 15px 0px;
         text-align : center;
     }
 
-    /* etape 3 bordure bleue mobile */
     .header--nav > a{
         padding-top: 10px;
         border-top : 2px solid transparent;
-        border-bottom: 2px solid transparent ;
+        border-bottom: 4px solid #F2F2F2;
         padding-bottom: 25px;
     }
     
     .header--nav > a:hover{
         border-top : 2px solid transparent;
         border-bottom: 4px solid #0065FC ;
-    
     }
 
-    .title-h1, .title-p{
-        margin: 20px 15px;
-        padding: 0px 35px;}
+    .title{
+        padding : 0 50px;
+    }
 
     .title-h1{
-        font-size: 46px;
+        font-size: 2.75em;
     }
 
     .title-p{
-        font-size: 32px;
+        font-size: 2.0em;
+        margin-top: 20px;
+
     }
 
     .formSearch--buttonDesktop{
         display: none;
     }
-            
-    .formSearch--buttonMobile{
-        display: initial;
-        font-size: 24px;
-        width: 60px;
-        background-color: #0065FC;
-        color:#F2F2F2;
-        padding: 0px 15px;
-        border-radius : 0px 10px 10px 0px;
-    }
 
     .formSearch{
+        display: flex;
+        justify-content: center;
         height: 100px; 
-        width:95%;
         border-radius: 35px;
         overflow: visible;
-        padding: 0px 10px;
-        margin-left: 10px;
+        margin:auto;
     }
-        
-    .formSearch >*{
-        width : 100%;
-    }
-        
+            
     .formSearch--pin{
-        width: 115px;
+        width: 7.0em;
         height: auto;
         border-radius: 35px 0 0 35px;
     }
     
     .fa-map-marker-alt{
-        font-size:36px;
+        font-size:2.5em;
     }
     
     .formSearch>input{
@@ -568,212 +560,170 @@ border-radius : 0 15px 15px 0px;
     
     .formSearch > input,
     .formSearch > button {
-        font-size: 36px;
+        font-size: 2.2em;
     }
 
     .formSearch--buttonMobile {
-        width: 100px;
+        display: initial;
+        background-color: #0065FC;
+        color:#F2F2F2;
+        padding: 0px 15px;
+        border-radius : 0px 10px 10px 0px;
+        width: 2.8em;
         border-radius : 30px;
-        filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.4));
-    }
-        
+        filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.3));
+    }       
+
     .filters{
-        padding : 0px 35px;
+        padding : 0 50px;
     }
 
-    .filters > .filters--h2{
-        font-size: 36px;
-    }
+    .filters--h2 {
+        font-size: 2.0em;}
 
-    .filters > .filters--ul > .filters--button{
-        font-size: 28px;
+        .filters--ul {
+            margin: 0px;
+        gap: 40px 20px}
 
-    }
-        
     .filters--button{
-        width: 40%;
+        font-size: 1.8em;
+        flex:1;
+        gap: 20px;
         border-radius: 60px;
         border: rgb(218, 223, 216) solid 4px;
-        padding: 20px 20px 20px 20px;
-        margin : 15px 0px;
-    }
-    
-    .filters--button:hover{
-        cursor: pointer;
-        background-color:#DEEBFF;
+        padding: 30px 40px;
     }
     
     .filters--button > i{
-        margin: 0px 20px 0px 0px;
         color: #0065FC;
-        font-size: 42px;
-        padding-left: 20px;
+        font-size: 1.3em;
     }
     
     .info{
-        padding: 0 50px;
+        margin: 10px 0px;
+        padding : 0px 50px;
     }
 
     .info .fas {
-        color: #0065fc;
-        font-size: 24px;
+        font-size: 1.5em;
         padding: 10px 18px 10px 18px;
         border: solid 2px #D9D9D9;
         border-radius: 3000px;
-        margin: 15px 15px 15px 0px;
         }
     
     .info-p{
-        margin: 5px 0px 0px 0px;
-        font-size: 32px;
+        font-size: 2.0em;
     }
-
 
     .hebergements-and-populaires{
         flex-direction: column-reverse;
-        justify-content: center;
     }
-    .hebergements-and-populaires section {
-        padding: 30px 50px;
-    border-radius: 0px;}
 
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
+    .section-title {
+        font-size: 2.7em;
+    }
+
+    .populaires-cards .card-content {
+        gap: 130px;
+        padding-left: 30px;;
+    }
+
+    .populaires-cards .card-title,
+    .hebergements .card-title{
+        font-size: 2.0em;
+    }
+
+    .populaires-cards .card-subtitle,
+    .hebergements .card-subtitle{
+        font-size: 1.7em;
+    }
+
+    .populaires-cards .card-rating,
+    .hebergements .card-rating{
+        font-size: 1.4em;
+    }
 
     .populaires{
         border-radius: 0px;
-        width: 100%;
-        padding : 0px 60px;
-    }
-    
-    .populaires-title .section-title {
-        font-size: 32px;
     }
 
-    .section-title{
-        font-size: 42px;
-    }
+    .populaires-title i {
+        font-size: 1.8em;} 
 
-    .fa-solid {
-        font-size: 36px;
-    }
-
-    .populaires-cards{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .populaires-cards a{
-        width : 100%;
-        height: 300px;
-        margin-bottom: 40px;
-    }
-
-    
-    .populaires-cards >a > .card > img {
-        width: 33%;
-        height: 300px;
-    }
-    
-    .populaires-cards .card-content {
-        width: 67%;
-        padding-left: 15px;
-        display: flex;
+    .populaires-cards {
         flex-direction: column;
-        justify-content: space-between;
-        box-sizing: border-box;
+        padding: 0px 15px;
     }
-    
-    .populaires-cards .card-title {
-        margin: 20px 10px 10px 20px;
-        font-size: 32px;
-    }
-    
-    .populaires-cards .card-subtitle {
-        margin: 0 10px 0 20px;
-        font-size: 28px;
+    .populaires-cards a{
+    width: 100%;
     }
 
-    .populaires-cards .card-rating {
-        margin-bottom: 5px;
-        font-size: 8px;
-    }
-
-    .card{
+    .populaires-cards .card{
         padding: 10px;
-        }
-        .card .fa-star {
-            font-size: 28px; 
-        }
-    
+        border-radius: 30px;
+    }
+
+    .populaires-cards img{
+        height: auto;
+        border-radius: 20px 0px 0px 20px;
+    }
+
     .hebergements-and-populaires  .hebergements{
         background-color:white;
-        }
+    }
 
+    .hebergements-and-populaires .hebergements{
+        padding: 70px 40px;
+    }
 
     .herbergements-cards{
         grid-template-columns: 1fr;
         grid-gap: 50px;
-    }
         
-    .hebergements-title  .section-title,
-    .hebergements div h3{
-        font-size: 32px;
     }
-        
-    .herbergements-cards > a{
-        height: 410px;
+    
+    .herbergements-cards .card{
+        padding: 10px;
+        border-radius: 35px;
     }
+
     .herbergements-cards > a > .card > img{
         width : 100%;
-        height: 240px;
+        height: auto;
+        max-height: 225px;
         object-fit: cover;
         margin-bottom: 10px;
+        border-radius: 30px 30px 0px 0px;
     }
         
     .herbergements-cards >a >.card>.card-content{
         margin-left: 5px;
         margin-bottom: 5px;
+        gap : 10px;
    }
 
-    .herbergements-cards >a >.card{
-        height: 100%;
-    }
-
-    .herbergements-cards >a >.card>.card-content{
-        height: 10px;
-    }
-            
-
-    .herbergements-cards >a >.card>.card-content>.card-txt>.card-title,
-    .herbergements-cards >a >.card>.card-content>.card-txt>.card-subtitle{
-        font-size: 32px;
-        margin-top: 10px;
-        margin-left: 20px;
-    }
-
-    .herbergements-cards >a >.card>.card-content>.card-rating{
-        margin: 25px 0px 0px 20px;
-    }
-
-    .hebergements div h3 {
-        font-size: 36px;
-        margin-top: 50px;
+    .herbergements-afficherPlus{
+        font-size: 2.2em;
     }
 
     .activities{
-        padding-top : 40px;
-        height: 2200px;
-        padding: 40px;
+        /* padding-top : 40px; */
+        /* height: 2200px; */
+        padding: 40px 60px;
     }
 
     .activities--h2{
-        font-size: 46px;
+        font-size: 2.7em;
     }
-
 
     .activities--cards{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 100px;
+        grid-gap: 30px;
     }
 
     .activities--cards--card{
@@ -781,34 +731,34 @@ border-radius : 0 15px 15px 0px;
     }
 
     .activities--cards--card_img{
-        height : 300px;
+        height: auto;
+        max-height : 275px;
         width: 100%;
         object-fit: cover
     }
+
     .activities--cards--card_p{
-        font-size: 32px;
+        font-size: 2.0em;
         margin-left: 20px;
     }
 
     .footer{
         grid-template-columns: 1fr;
         background-color:#F2F2F2;
-        grid-gap: 30px;
+        grid-gap: 50px;
     }
 
     .footer--categories_title{
-        font-size: 36px;
+        font-size: 2.2em;
         margin: 50px 0px 0px 50px;
     }
 
-    .footer >div > p >a{
-        font-size: 28px;
-        margin: 50px 0px 0px 50px;
+    .footer >div >a{
+        font-size: 2.0em;
+        margin: 30px 0px 0px 50px;
     }
 
-    .footer >div > p{
-        margin-bottom: 30px;
-    }
+
 }
 
 /* Small devices (phones, less than 709px) */
