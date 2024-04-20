@@ -769,10 +769,22 @@ border-radius : 0 15px 15px 0px;
     }
 }
 
+@media (max-width: 740px) {
+    .filters--button {
+        padding: 20px 25px;
+        gap: 10px;
+    }
+    .filters--ul{
+        gap: 30px 10px;
+    }
+}
 
 @media (max-width: 709px) {
     .formSearch > input{
         font-size: 1.7em;
+    }
+    .filters--button {
+        font-size: 1.5em;
     }
 }
 
@@ -801,8 +813,9 @@ border-radius : 0 15px 15px 0px;
     }
 
     .filters--button {
-        font-size: 1.5em;
-    } 
+        padding: 15px 20px;
+        font-size: 1.4em;
+    }
 
     .formSearch{
         height: 90px;
@@ -815,6 +828,7 @@ border-radius : 0 15px 15px 0px;
 
     .formSearch > button {
         font-size: 2.1em;
+        
     }
 
     .formSearch--buttonMobile {
@@ -828,6 +842,7 @@ border-radius : 0 15px 15px 0px;
     .section-title {
         font-size: 2.4em;
     }
+
     .populaires-cards .card-title, .hebergements .card-title {
         font-size: 1.7em;
     }
@@ -836,6 +851,10 @@ border-radius : 0 15px 15px 0px;
     }
     .populaires-cards .card-rating, .hebergements .card-rating {
     font-size: 1.2em;
+    }
+
+    .herbergements-afficherPlus {
+        font-size: 1.9em;
     }
 
     .activities--h2 {
@@ -861,6 +880,15 @@ border-radius : 0 15px 15px 0px;
 .formSearch > input{
     font-size: 1.6em;
     padding-left: 20px;
+}
+
+.filters--button {
+    padding: 10px 15px;
+    font-size: 1.3em;
+}
+.activities--cards--card_img {
+    height: 100%; /* La hauteur de chaque image remplira la hauteur de son conteneur parent */
+    aspect-ratio: 16/9; /* Assurez-vous que toutes les images ont le même rapport hauteur/largeur */
 }
 }
 
@@ -903,7 +931,7 @@ border-radius : 0 15px 15px 0px;
     }
 
     .filters--button {
-        font-size: 1.2em;
+        font-size: 1.3em;
     } 
 
     .formSearch--buttonMobile {
@@ -925,6 +953,10 @@ border-radius : 0 15px 15px 0px;
     }
     .populaires-cards .card-rating, .hebergements .card-rating {
     font-size: 1.0em;
+    }
+
+    .herbergements-afficherPlus {
+        font-size: 1.7em;
     }
 
     .activities--h2 {
@@ -960,20 +992,20 @@ border-radius : 0 15px 15px 0px;
     }
 
     .fa-map-marker-alt {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     .formSearch > input{
-        font-size: 1.2em;
+        font-size: 1.0em;
         padding-left: 15px;
     }
 
     .formSearch{
-        height: 80px;
+        height: 75px;
     }
 
     .formSearch--pin {
-        width: 5.0em;
+        width: 4.5em;
     }
 
     .formSearch > button {
@@ -981,7 +1013,7 @@ border-radius : 0 15px 15px 0px;
     }
 
     .filters--button {
-        font-size: 1.0em;
+        font-size: 0.9em;
     } 
 
     .formSearch--buttonMobile {
@@ -995,6 +1027,11 @@ border-radius : 0 15px 15px 0px;
     .section-title {
         font-size: 1.9em;
     }
+
+    .populaires-cards .card-content {
+        gap: 80px;
+    }
+
     .populaires-cards .card-title, .hebergements .card-title {
         font-size: 1.2em;
     }
@@ -1005,6 +1042,10 @@ border-radius : 0 15px 15px 0px;
     font-size: 0.9em;
     }
 
+    .herbergements-afficherPlus {
+        font-size: 1.4em;
+    }
+
     .activities--h2 {
         font-size: 1.9em;
     }
@@ -1013,9 +1054,9 @@ border-radius : 0 15px 15px 0px;
     }
 
     .footer--categories_title {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .footer >div >a {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
